@@ -1,0 +1,47 @@
+\documentclass[sigsmall]{acmart}
+
+\usepackage{graphicx}
+
+\title{Summary of \emph{How Effective Are Commonly-Used Ad-Blockers?}}
+\author{Matthew Oros, Sonny Smith, Michael Terekhov, Dennis Ulichney}
+
+\setcopyright{none}
+\settopmatter{printacmref=false}
+
+\begin{document}
+\maketitle
+
+
+\section*{Abstract}
+With the development of the internet web pages, online advertisements have also developed. Online advertisements can help find products that a user has been looking for, but they often ruin user experiences. Online advertisements might take up the whole space of a web page, and for mobile users, online advertisements might even make the usage of the page impossible. This research focuses on the software that removes such advertisements from web pages. The research paper includes an introduction, breakdown/related work, experiment design, results, and conclusion/future work.  \cite{}
+
+\section*{Introduction}
+The services offered online are mostly free and the most common way to monetize them is through online advertising. Online ads can be helpful, but most users find them to be one of the most annoying things on the internet. Most internet users want to minimize the number of ads they see and various ad-blocking software can be used to achieve this. The easiest and most popular way to block ads is to use browser extensions. An advanced ad-blocking method is to use specialized software that blocks incoming ad domains. Advanced software is considered more reliable, which means it blocks more ads. The purpose of this study is to find out how effective ad-blocking extensions are. This study focuses on the most popular browser ad blockers and their effectiveness compared to Pi-Hole software (the advanced software used for this study). Ad-blocking extensions that were utilized are AdBlock Plus, AdBlock, uBlock Origin, Privacy Badger, and Ghostery. Internet browsers that were utilized to test the software are Chrome, Microsoft Edge, and Firefox.
+
+
+\section*{Background/Related Work}
+
+
+\section*{Experiment Design}
+
+\section*{Results}
+Each blocker was tested individually on one browser at a time. 30 websites were tested with the blocker including: YouTube, CNN, Fox News, Twitter, Instagram, and Yahoo Finance.
+ Then, the number of domains that were blocked was reported by each blocker's icon.
+ A second test was performed using MITM-Proxy to examine network traffic to find the total number of ad domains requested by the webpages with each blocker.
+
+This graph illustrates the number of domains recorded by MITM-Proxy.
+The blue bar indicates the total number of domains recorded by the proxy while the red bar indicates the number of those domains that are considered known-ads when compared to the Stephen Black host list which Pi-Hole uses by default.
+The effectiveness of the ad-blocking software is indicated by the comparison of the blue and red graph. The lower the red bar when compared to the blue bar, the more effective the ad-blocker extension is at blocking DNS requests.
+
+\begin{figure}[h]
+  \includegraphics[scale =0.5]{Edit1.png}
+  \caption{The first graph(a) compares the total number of detected domains to the number ad-domains for each adblocker. The second graph(b) shows the average number of ad-domains reported by each adblocker.}
+  \label{fig:graph1ab}
+\end{figure}
+
+\section*{Conclusion/Future Work}
+
+
+\bibliographystyle{acm}
+\bibliography{myBib}
+\end{document}
